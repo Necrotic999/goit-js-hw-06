@@ -14,7 +14,7 @@ class Storage {
     }
 
     removeItem(itemToRemove) { 
-        this.#items.filter(el => el !== itemToRemove);
+        this.#items = this.#items.filter(el => el !== itemToRemove);
     }
 }
 
